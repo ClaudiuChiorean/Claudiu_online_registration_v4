@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+form,
+.contact {
+    display: flex;
+    font-size: 1.1em;
+}
+
+body {
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2em;
+}
+
+header>h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    padding: 1.5em;
+    font-size: 1.1em;
+    background-color: #2D3945;
+    color: white;
+}
+
+header>h2 {
+    text-align: center;
+    color: #2D3945;
+}
+
+header>p {
+    text-align: center;
+    margin: 0 1em 2em;
+    color: #AAAFB4;
+    font-size: 1.1em;
+}
+
+.top-styling-borders {
+    display: flex;
+    border-top: 5px solid black;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    padding: 2px;
+    margin: 0 auto;
+    width: 93%;
+}
+
+form,
+.contact {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 768px;
+    margin-top: 1em;
+}
+
+
+fieldset {
+    border: none;
+}
+
+legend {
+
+    font-size: 1.2em;
+    font-weight: 700;
+    color: black;
+}
+
+.contact legend {
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+.newsletter-domain>legend {
+    border-top: 3px solid #000000;
+    width: 100%;
+    padding-top: 2em;
+}
+
+.zip-code {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+input[type="number"] {
+    width: 50%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #4EBBB5;
+
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    cursor: pointer;
+    background-color: rgb(223, 240, 234);
+}
+
+#name::placeholder,
+#mail::placeholder {
+    text-align: end;
+    font-style: italic;
+    margin-right: 1em;
+    color: #AAAFB4;
+}
+
+form,
+footer {
+    color: #AAAFB4;
+}
+
+textarea {
+    width: 100%;
+    height: 20%;
+    resize: none;
+}
+
+.submit {
+
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: white;
+    background-color: cadetblue;
+    border: none;
+    box-shadow: 3px 3px #2D3945;
+
+}
+
+.submit:hover {
+    opacity: .8;
+    color: #000000;
+    background-color: #4EBBB5;
+    ;
+
+}
+
+.submit:active {
+    box-shadow: 1px 1px #2D3945;
+    border: none;
+    background-color: #4EBBB5;
+
+
+}
+
+footer {
+    display: block;
+    margin-top: 1em;
+    padding-bottom: 10em;
+    text-align: center;
+
+}
+
+
+
+@media (min-width: 768px) {
+   
+    body, form, .contact{
+        font-size: 1em;
+    }
+    .top-styling-borders {
+        width: 96%;
+    }
+
+    .info legend {
+        font-size: 1.2em;
+    }
+
+    .nowrap {
+        display: flex;
+        align-items: baseline;
+        white-space: nowrap;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    .nowrap>input,
+    .nowrap>#country-state {
+        width: 30em;
+        margin-left: 7em;
+    }
+
+    .nowrap>#zip {
+        width: 25%;
+        margin-right: 295px;
+    }
+
+    .zip-code {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+
+}

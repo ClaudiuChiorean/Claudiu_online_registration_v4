@@ -17,36 +17,114 @@
         <p>Get the latest news on how your code id doing right in your inbox</p>
     </header>
 
-    <form action="index.html" method="post">
-
-        <fieldset>
+    <form action="index.html" method="post" class="main-content">
+        <div class="top-styling-borders"></div>
+        <fieldset class="info contact">
             <legend>Contact Information</legend>
+            <!-- <div class="'wrapper"> -->
+            <span class="nowrap">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name" placeholder="Required" required>
+            </span>
 
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="user_name">
+            <span class="nowrap">
+                <label for="mail">Email Adress</label>
+                <input type="email" id="mail" name="user_email" placeholder="Required" required>
+            </span>
+            <span class="nowrap">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone" placeholder="123-45-678">
+            </span>
+            <span class="nowrap">
+                <label for="adr">Street Address</label>
+                <input type="text" id="adr" name="address" placeholder="str. Portelanului nr. 2">
+            </span>
+            <span class="nowrap">
+                <label for="city"> City</label>
+                <input type="text" id="city" name="city" placeholder="Cluj-Napoca">
+            </span>
 
-            <label for="mail">Email Adress</label>
-            <input type="email" id="mail" name="user_email">
+            <span class="nowrap">
+                <label for="country-state">State/County</label>
+                <!--- Romania states -->
+                <select id="country-state" name="country-state">
+                    <option value="">Choose State</option>
+                    <option value="AB">Alba County</option>
+                    <option value="AR">Arad County</option>
+                    <option value="AG">Arges</option>
+                    <option value="BC">Bacău County</option>
+                    <option value="BH">Bihor County</option>
+                    <option value="BN">Bistrița-Năsăud County</option>
+                    <option value="BT">Botoșani County</option>
+                    <option value="BR">Braila</option>
+                    <option value="BV">Brașov County</option>
+                    <option value="B">Bucharest</option>
+                    <option value="BZ">Buzău County</option>
+                    <option value="CL">Călărași County</option>
+                    <option value="CS">Caraș-Severin County</option>
+                    <option value="CJ">Cluj County</option>
+                    <option value="CT">Constanța County</option>
+                    <option value="CV">Covasna County</option>
+                    <option value="DB">Dâmbovița County</option>
+                    <option value="DJ">Dolj County</option>
+                    <option value="GL">Galați County</option>
+                    <option value="GR">Giurgiu County</option>
+                    <option value="GJ">Gorj County</option>
+                    <option value="HR">Harghita County</option>
+                    <option value="HD">Hunedoara County</option>
+                    <option value="IL">Ialomița County</option>
+                    <option value="IS">Iași County</option>
+                    <option value="IF">Ilfov County</option>
+                    <option value="MH">Mehedinți County</option>
+                    <option value="MM">Mureș County</option>
+                    <option value="NT">Neamț County</option>
+                    <option value="OT">Olt County</option>
+                    <option value="PH">Prahova County</option>
+                    <option value="SJ">Sălaj County</option>
+                    <option value="SM">Satu Mare County</option>
+                    <option value="SB">Sibiu County</option>
+                    <option value="SV">Suceava County</option>
+                    <option value="TR">Teleorman County</option>
+                    <option value="TM">Timiș County</option>
+                    <option value="TL">Tulcea County</option>
+                    <option value="VL">Vâlcea County</option>
+                    <option value="VS">Vaslui County</option>
+                    <option value="VN">Vrancea County</option>
+                </select>
+            </span>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone" placeholder="123-45-678">
+            <span class="nowrap zip-code">
+                <label for="zip">Zip Code</label>
+                <input type="number" id="zip" name="zip" placeholder="411511">
+            </span>
+            <!-- </div> -->
+        </fieldset>
 
-            <label for="adr">Address</label>
-            <input type="text" id="adr" name="address" placeholder="str. Portelanului nr. 2">
+        <fieldset class="info newsletter-domain">
+            <legend>Newsletter</legend>
+            <p>Select the newslatters you would like to receive</p>
+            <input type="checkbox" id="html-news" name="html-news" value="HTML" checked>
+            <label for="html-news"> HTML News</label><br>
+            <input type="checkbox" id="css-news" name="css-news" value="CSS">
+            <label for="css-news"> CSS News</label><br>
+            <input type="checkbox" id="javascript-news" name="javascript-news" value="JavaScript">
+            <label for="javascript-news"> JavaScript News</label><br>
 
-            <label for="city"> City</label>
-            <input type="text" id="city" name="city" placeholder="Cluj-Napoca">
+            <p>Newsletter format</p>
+            <input type="radio" id="option-1" name="fav_language" value="HTML" checked>
+            <label for="option-1">HTML</label><br>
+            <input type="radio" id="option-2" name="fav_language" value="plain_text">
+            <label for="option-2">Plain text</label><br>
 
-            <label for="state">State/County</label>
-            <input type="text" id="state" name="state" placeholder="CJ">
-
-            <label for="zip">Zip</label>
-            <input type="text" id="zip" name="zip" placeholder="411511">
+            <p><label for="topics">Other topics you'd like to hear about</label></p>
+            <textarea id="topics" name="topics" rows="4" cols="50"></textarea>
+            <br>
+            <input type="button" class="submit" name="submit" value="Sign Up">
 
         </fieldset>
 
     </form>
-
+    <footer><i>Copyright The Code Review</i></footer>
 
 </body>
 
