@@ -121,6 +121,7 @@ input:focus,
 select:focus,
 textarea:focus {
     border: 1px solid #4EBBB5;
+    transition: .1s;
 
 }
 
@@ -169,7 +170,7 @@ textarea {
     opacity: .8;
     color: #000000;
     background-color: #4EBBB5;
-    ;
+    
 
 }
 
@@ -221,7 +222,7 @@ footer {
 
     .nowrap>#zip {
         width: 25%;
-        margin-right: 295px;
+        margin-right: 305px;
     }
 
     .zip-code {
