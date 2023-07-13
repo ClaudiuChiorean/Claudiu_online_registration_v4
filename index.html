@@ -21,7 +21,7 @@
         <div class="top-styling-borders"></div>
         <fieldset class="info contact">
             <legend>Contact Information</legend>
-            <!-- <div class="'wrapper"> -->
+            
             <span class="nowrap">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="user_name" placeholder="Required" required>
@@ -33,7 +33,7 @@
             </span>
             <span class="nowrap">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user_phone" placeholder="123-45-678">
+                <input type="tel" id="phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-45-678">
             </span>
             <span class="nowrap">
                 <label for="adr">Street Address</label>
@@ -97,7 +97,7 @@
                 <label for="zip">Zip Code</label>
                 <input type="number" id="zip" name="zip" placeholder="411511">
             </span>
-            <!-- </div> -->
+            
         </fieldset>
 
         <fieldset class="info newsletter-domain">
@@ -119,7 +119,7 @@
             <p><label for="topics">Other topics you'd like to hear about</label></p>
             <textarea id="topics" name="topics" rows="4" cols="50" placeholder="Write here the other topics you'd like to hear about..."></textarea>
             <br>
-            <input type="button" class="submit" name="submit" value="Sign Up">
+            <input type="submit" class="submit" name="submit" value="Sign Up">
 
         </fieldset>
 
